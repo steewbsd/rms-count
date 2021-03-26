@@ -6,4 +6,5 @@ while True:
     i+=1
     wbmsg = {"content":f"This has been going on for {i} seconds"}
     requests.post(webhook, data=wbmsg)
+    print("This has been going on for {i} seconds")
     sleep(1)
