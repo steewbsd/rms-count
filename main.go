@@ -29,5 +29,15 @@ func get_supporters(url string) int {
 
 
 func main() {
-		fmt.Printf("Supporters: %d, Opposers: %d\n", get_supporters(support), get_supporters(open))
+		supporters := get_supporters(support)
+		opposers := get_supporters(open)
+		diff := opposers - supporters
+		fmt.Printf("Supporters: %d, Opposers: %d\n", supporters, opposers)
+		if diff > 0 {
+			fmt.Printf("Opposers are ahead by: %d\n", diff)
+		} else if diff < 0 {
+			fmt.Printf("Supporters are ahead by: %d\n", diff)
+		} else {
+			fmt.Println("The count is tied")
+		}
 }
