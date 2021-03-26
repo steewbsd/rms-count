@@ -36,7 +36,7 @@ func main() {
 		if diff > 0 {
 			fmt.Printf("Opposers are ahead by: %d\n", diff)
 		} else if diff < 0 {
-			fmt.Printf("Supporters are ahead by: %d\n", diff)
+			fmt.Printf("Supporters are ahead by: %d\n", -diff)
 		} else {
 			fmt.Println("The count is tied")
 		}
