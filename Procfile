@@ -1,1 +1,1 @@
-worker: bin/hello
+worker: go run main.go
